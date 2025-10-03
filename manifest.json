@@ -1,0 +1,43 @@
+
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.16/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.16",
+  "version": "1.0.2",
+  "id": "00000000-0000-0000-0000-000000000001",
+  "packageName": "com.yourcompany.ai-tools-library",
+  "developer": {
+    "name": "Your Company",
+    "websiteUrl": "https://yourcompany.com",
+    "privacyUrl": "https://yourcompany.com/privacy",
+    "termsOfUseUrl": "https://yourcompany.com/terms"
+  },
+  "name": {
+    "short": "AI Tools Library",
+    "full": "AI Tools Library for Your Company"
+  },
+  "description": {
+    "short": "Quick access to AI tools",
+    "full": "Explore all the AI tools available in your organization to streamline workflow and optimize performance across teams."
+  },
+  "icons": {
+    "color": "icon-color.png",
+    "outline": "icon-outline.png"
+  },
+  "accentColor": "#00b0f4",
+  "staticTabs": [
+    {
+      "entityId": "ai-tools-library",
+      "name": "AI Tools Library",
+      "contentUrl": "https://yourdomain.com/AI_Tools_Library/index.html",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "permissions": [
+    "identity"
+  ],
+  "validDomains": [
+    "yourdomain.com"
+  ]
+}
