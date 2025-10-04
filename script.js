@@ -15,8 +15,24 @@ function openTool(toolName) {
   // Check if running in Teams
   if (typeof microsoftTeams !== 'undefined') {
     microsoftTeams.app.initialize().then(() => {
-      // Try to open in Teams (will open in iframe if site allows it)
-      microsoftTeams.app.openLink(url);
+      // Open in a stage view (modal) inside Teams
+      microsoftTeams.app.openLink({
+        url: url,
+        targetElementBounds: null
+      }).catch(() => {
+        // If stage view fails, try dialog
+        microsoftTeams.dialog.url.open({
+          url: url,
+          size: {
+            height: 600,
+            width: 800
+          },
+          title: toolName
+        }).catch(() => {
+          // Final fallback: open in browser
+          window.open(url, '_blank');
+        });
+      });
     });
   } else {
     // Fallback for testing outside Teams

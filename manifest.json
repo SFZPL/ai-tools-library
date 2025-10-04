@@ -2,14 +2,14 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.16/MicrosoftTeams.schema.json",
   "manifestVersion": "1.16",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "id": "00000000-0000-0000-0000-000000000001",
   "packageName": "com.yourcompany.ai-tools-library",
   "developer": {
     "name": "Your Company",
-    "websiteUrl": "https://yourcompany.com",
-    "privacyUrl": "https://yourcompany.com/privacy",
-    "termsOfUseUrl": "https://yourcompany.com/terms"
+    "websiteUrl": "https://sfzpl.github.io/ai-tools-library",
+    "privacyUrl": "https://sfzpl.github.io/ai-tools-library",
+    "termsOfUseUrl": "https://sfzpl.github.io/ai-tools-library"
   },
   "name": {
     "short": "AI Tools Library",
@@ -28,7 +28,7 @@
     {
       "entityId": "ai-tools-library",
       "name": "AI Tools Library",
-      "contentUrl": "https://yourdomain.com/AI_Tools_Library/index.html",
+      "contentUrl": "https://sfzpl.github.io/ai-tools-library/index.html",
       "scopes": [
         "personal"
       ]
@@ -38,6 +38,8 @@
     "identity"
   ],
   "validDomains": [
-    "yourdomain.com"
+    "sfzpl.github.io",
+    "en.wikipedia.org",
+    "example.com"
   ]
 }
