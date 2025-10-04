@@ -4,51 +4,112 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Tools Library</title>
+  <title>The Prez.AI Hub</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://res.cdn.office.net/teams-js/2.19.0/js/MicrosoftTeams.min.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <div class="background-gradient"></div>
+
   <header>
-    <h1>AI Tools Library</h1>
-    <p>Explore all the AI tools available in the company!</p>
+    <div class="header-content">
+      <div class="logo-section">
+        <div class="logo-icon">AI</div>
+        <div class="header-text">
+          <h1>The Prez.AI Hub</h1>
+          <p>Your gateway to intelligent workflows</p>
+        </div>
+      </div>
+    </div>
   </header>
 
-  <div class="tool-container">
-    <div class="tool-card" onclick="openTool('Nasma')">
-      <h3>Nasma (Your P&C AI Assistant)</h3>
-      <p><strong>Empowers:</strong> Everyone, across every department</p>
-      <p>Nasma is an intelligent AI assistant designed to streamline P&C processes and employee interactions. It provides instant responses to common workplace queries and automates routine P&C tasks.</p>
+  <main>
+    <div class="tool-container">
+      <div class="tool-card" onclick="openTool('Nasma')">
+        <div class="card-icon">👥</div>
+        <div class="card-content">
+          <h3>Nasma</h3>
+          <p class="card-subtitle">Your P&C AI Assistant</p>
+          <div class="card-tag">Everyone</div>
+          <p class="card-description">Intelligent AI assistant that streamlines P&C processes and employee interactions with instant responses to workplace queries.</p>
+          <div class="card-footer">
+            <span class="launch-text">Launch →</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tool-card" onclick="openTool('PrezBot')">
+        <div class="card-icon">🎨</div>
+        <div class="card-content">
+          <h3>PrezBot</h3>
+          <p class="card-subtitle">Creative AI Assistant</p>
+          <div class="card-tag">Creatives</div>
+          <p class="card-description">AI-powered creative assistant that analyzes presentations and provides strategic recommendations aligned with creative standards.</p>
+          <div class="card-footer">
+            <span class="launch-text">Launch →</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tool-card" onclick="openTool('TMS')">
+        <div class="card-icon">🔄</div>
+        <div class="card-content">
+          <h3>TMS</h3>
+          <p class="card-subtitle">Traffic Management System</p>
+          <div class="card-tag">Client Success</div>
+          <p class="card-description">Comprehensive project routing platform that optimizes workflow distribution and ensures efficient project completion.</p>
+          <div class="card-footer">
+            <span class="launch-text">Launch →</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tool-card" onclick="openTool('CashCollection')">
+        <div class="card-icon">💰</div>
+        <div class="card-content">
+          <h3>Cash Collection</h3>
+          <p class="card-subtitle">Financial Tracking</p>
+          <div class="card-tag">Finance</div>
+          <p class="card-description">Real-time visibility into payment status, outstanding invoices, and collection activities for comprehensive financial tracking.</p>
+          <div class="card-footer">
+            <span class="launch-text">Launch →</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tool-card" onclick="openTool('UtilizationDashboard')">
+        <div class="card-icon">📊</div>
+        <div class="card-content">
+          <h3>Utilization Dashboard</h3>
+          <p class="card-subtitle">Resource Optimization</p>
+          <div class="card-tag">Team Leads</div>
+          <p class="card-description">Comprehensive insights into team capacity, workload distribution, and resource optimization to maximize productivity.</p>
+          <div class="card-footer">
+            <span class="launch-text">Launch →</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tool-card" onclick="openTool('LeadEnrichment')">
+        <div class="card-icon">🎯</div>
+        <div class="card-content">
+          <h3>Lead Enrichment</h3>
+          <p class="card-subtitle">Smart Lead Management</p>
+          <div class="card-tag">Marketing & BD</div>
+          <p class="card-description">Intelligent lead management system that automates enrichment, qualification, and CRM integration for business development.</p>
+          <div class="card-footer">
+            <span class="launch-text">Launch →</span>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="tool-card" onclick="openTool('PrezBot')">
-      <h3>PrezBot</h3>
-      <p><strong>Empowers:</strong> Creatives at every level</p>
-      <p>PrezBot is an AI-powered creative assistant that analyzes client presentations and provides strategic recommendations aligned with Prezlab's creative standards and best practices.</p>
-    </div>
-    <div class="tool-card" onclick="openTool('TMS')">
-      <h3>TMS (Traffic Management System)</h3>
-      <p><strong>Empowers:</strong> Client Success teams</p>
-      <p>The Traffic Management System (TMS) is a comprehensive project routing and assignment platform that optimizes workflow distribution and ensures efficient project completion.</p>
-    </div>
-    <div class="tool-card" onclick="openTool('CashCollection')">
-      <h3>Cash Collection</h3>
-      <p><strong>Empowers:</strong> Administration, Country Directors, Finance team</p>
-      <p>Cash Collection is a comprehensive financial tracking system that provides real-time visibility into payment status, outstanding invoices, and collection activities.</p>
-    </div>
-    <div class="tool-card" onclick="openTool('UtilizationDashboard')">
-      <h3>Utilization Dashboard</h3>
-      <p><strong>Empowers:</strong> Client Success, Team Leads, Creative Directors</p>
-      <p>The Utilization Dashboard provides comprehensive insights into creative team capacity, workload distribution, and resource optimization to maximize productivity while maintaining balance.</p>
-    </div>
-    <div class="tool-card" onclick="openTool('LeadEnrichment')">
-      <h3>Lead Enrichment Tool</h3>
-      <p><strong>Empowers:</strong> Marketing, BD</p>
-      <p>The Lead Enrichment Tool is an intelligent lead management system that automates lead enrichment, qualification, and integration with Odoo CRM for enhanced business development efficiency.</p>
-    </div>
-  </div>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Your Company</p>
+    <p>Powered by Prez.AI • © 2025</p>
   </footer>
 
   <script src="script.js"></script>
