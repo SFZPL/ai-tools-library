@@ -2,11 +2,10 @@
 // Tool URLs mapping
 const toolUrls = {
   'Nasma': 'https://en.wikipedia.org/wiki/Artificial_intelligence', // Test URL
-  'PrezBot': 'https://example.com/prezbot',
+  'PrezlabBrain': 'https://example.com/prezlab-brain',
   'TMS': 'https://example.com/tms',
-  'CashCollection': 'https://example.com/cashcollection',
   'UtilizationDashboard': 'https://example.com/utilization',
-  'LeadEnrichment': 'https://example.com/leadenrichment'
+  'LeadHub': 'https://example.com/lead-hub'
 };
 
 function openTool(toolName) {
