@@ -19,12 +19,12 @@ function openTool(toolName) {
         url: url,
         targetElementBounds: null
       }).catch(() => {
-        // If stage view fails, try dialog
+        // If stage view fails, try dialog with larger size
         microsoftTeams.dialog.url.open({
           url: url,
           size: {
-            height: 600,
-            width: 800
+            height: 800,
+            width: 1200
           },
           title: toolName
         }).catch(() => {
