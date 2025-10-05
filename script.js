@@ -23,8 +23,8 @@ function openTool(toolName) {
         microsoftTeams.dialog.url.open({
           url: url,
           size: {
-            height: 800,
-            width: 1200
+            height: 1000,
+            width: 1400
           },
           title: toolName
         }).catch(() => {
