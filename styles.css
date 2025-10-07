@@ -45,12 +45,15 @@ body {
   align-items: center;
 }
 
-.hero-overline {
+.hero-logo {
   text-transform: uppercase;
-  letter-spacing: 0.35em;
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: var(--muted);
+  font-size: clamp(2.25rem, 4vw, 3rem);
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  color: var(--navy);
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.08em;
 }
 
 .hero h1 {
@@ -255,8 +258,8 @@ button:focus-visible,
     padding-bottom: 3rem;
   }
 
-  .hero-overline {
-    letter-spacing: 0.28em;
+  .hero-logo {
+    letter-spacing: 0.22em;
   }
 
   .tools-grid {
