@@ -47,9 +47,9 @@ body {
 
 .hero-logo {
   text-transform: uppercase;
-  font-size: clamp(2.25rem, 4vw, 3rem);
+  font-size: clamp(1.75rem, 3vw, 2.4rem);
   font-weight: 700;
-  letter-spacing: 0.28em;
+  letter-spacing: 0.24em;
   color: var(--navy);
   display: inline-flex;
   align-items: baseline;
@@ -259,7 +259,7 @@ button:focus-visible,
   }
 
   .hero-logo {
-    letter-spacing: 0.22em;
+    letter-spacing: 0.18em;
   }
 
   .tools-grid {
@@ -287,3 +287,4 @@ button:focus-visible,
     scroll-behavior: auto !important;
   }
 }
+
