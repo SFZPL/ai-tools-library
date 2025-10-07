@@ -152,6 +152,18 @@ body {
   color: var(--muted);
 }
 
+.tool-card__divider {
+  margin: -0.5rem 0 1.25rem;
+  color: var(--accent, var(--coral));
+  opacity: 0.4;
+}
+
+.tool-card__divider svg {
+  display: block;
+  width: 60px;
+  height: 3px;
+}
+
 .tool-actions {
   display: flex;
   flex-direction: column;
