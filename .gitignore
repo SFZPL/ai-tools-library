@@ -1,4 +1,5 @@
 *.zip
+!AI_Tools_Teams_App.zip
 *.pdf
 create_icons.py
 icon-color.svg
